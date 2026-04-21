@@ -119,7 +119,7 @@ def create_master_m3u(base_video_url):
             for channel_id in CHANNEL_IDS:
                 stream_url = f"{base_video_url}{channel_id}/index.m3u8"
                 channel_name = channel_id.upper()
-                f.write(f'#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="DeaTHLesS", {channel_name}\n')
+                f.write(f'#EXTINF:-1 tvg-logo="https://i.hizliresim.com/8xzjgqv.jpg" group-title="Osmanlıtokadı", {channel_name}\n')
                 f.write(f'{stream_url}\n')
                 
         print(f"  ✅ {MASTER_M3U_FILENAME} başarıyla güncellendi/oluşturuldu!")
